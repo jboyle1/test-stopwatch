@@ -1,9 +1,13 @@
+/* Wrote out variables to target HTML elements by ID using the document browser object model and getElementById() method (using getElementsById to be unambiguous). Variables include: h1, Start, stop, clear. I also added variables for add() function, these include milli, seconds, minutes and hours. */
+
 var h1 = document.getElementsByTagName('h1')[0],
     start = document.getElementById('start'),
     stop = document.getElementById('stop'),
     clear = document.getElementById('clear'),
     milli = 0, seconds = 0, minutes = 0, hours = 0,
     t;
+
+/* Created add() function with if statement to Iterate and elapse time in milliseconds, seconds , minutes and hours. */
 
     function add() { 
         milli += 10;
@@ -17,7 +21,13 @@ var h1 = document.getElementsByTagName('h1')[0],
                     minutes = 0;
                     hours++;
                 }
-            }  /* Needed to outsource for assistence at this piont */
+            }  
+            /* Needed to outsource for assistence at this piont */
         }
+        /* After I had this in place I needed to outsource for some help. I used www.stackoverflow.com to get some advice. What I had was pretty close. I was advised to add ternary operators to the function. Using h1.textContent property to target HTML h1 tag contents. */
+   
+        h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds) + "." + (milli > 90 ? milli : "0" + milli);
     }
+
+
 
