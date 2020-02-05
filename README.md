@@ -2,7 +2,9 @@
 
 ## Name of Project: Test Stopwatch
 
-This project was a technical test for an interview. It was a front end task focusing on HTML, javascript and CSS. The task was to create a stopwatch using HTML and Javascript. When I started this project I initially had a vague idea of how to approach it. Create ID elements in the HTML that I can target in the Javascript inside variables using the browser object model (BOM) ‘document.’ and the getElementByID method. Then create a function that has an ‘if’ statement that iterates through milliseconds, seconds, minutes and hours. 
+This project was a technical test for an interview. It was a front end task focusing on HTML, javascript and CSS. The task was to create a stopwatch using HTML and vanilla Javascript.
+
+I initially created ID elements in the HTML that I could target in the Javascript inside variables using the browser object model (BOM) ‘document.’ and the getElementByID method. Then create a function that has an ‘if’ statement that iterates through milliseconds, seconds, minutes and hours. 
 
 After I had this in place I needed to outsource for some help. I used www.stackoverflow.com to get some advice and what I had was pretty close. I was advised to add ternary operators to the function. Using h1.textContent property to target HTML h1 tag contents.
 
