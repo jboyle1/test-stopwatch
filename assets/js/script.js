@@ -17,5 +17,7 @@ var h1 = document.getElementsByTagName('h1')[0],
                     minutes = 0;
                     hours++;
                 }
-            }
+            }  /* Needed to outsource for assistence at this piont */
         }
+    }
+
