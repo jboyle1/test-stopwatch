@@ -47,5 +47,10 @@ stop.onclick = function() {
     clearTimeout(t);
 }
 
+/* The last onclick event handler is for the clear button which invokes an anonymous function that resets the h1.textContent to Zero, also sets all the variables back to zero. */
 
-
+/* Clear button */
+clear.onclick = function() {
+    h1.textContent = "00:00:00:00";
+    milli = 0; seconds = 0; minutes = 0; hours = 0;
+}
